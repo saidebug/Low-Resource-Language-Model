@@ -1,0 +1,13 @@
+# Training (needs a CUDA GPU; bf16-capable such as L4/A100/RTX 30-40 series is best)
+torch
+transformers>=4.50
+peft>=0.14
+trl>=0.20
+datasets
+accelerate
+bitsandbytes
+
+# Running the quantized model locally (CPU is fine)
+
+# Optional: chrF score in evaluate.py
+sacrebleu
